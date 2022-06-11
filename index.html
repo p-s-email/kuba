@@ -6,6 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
   <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!-- Font Icon -->
+    <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/slick.css">
@@ -23,50 +25,7 @@
       </div>
     </div>
 
-    <nav class="menu">
-      <div class="menu__btn">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-      <ul class="menu__list">
-        <li class="menu__list-item">
-          <a class="menu__list-link" href="#!">
-            Резюме
-          </a>
-        </li>
-        <li class="menu__list-item">
-          <a class="menu__list-link" href="#!">
-            Главная
-        </a>
-        </li>
-        <li class="menu__list-item">
-          <a class="menu__list-link" href="#!">
-            Виды
-        </a>
-        </li>
-        <li class="menu__list-item">
-          <a class="menu__list-link" href="#!">
-            Погода
-        </a>
-        </li>
-        <li class="menu__list-item">
-          <a class="menu__list-link" href="#!">
-            Что сделать
-        </a>
-        </li>
-        <li class="menu__list-item">
-          <a class="menu__list-link" href="#!">
-            Резиденции
-        </a>
-        </li>
-        <li class="menu__list-item">
-          <a class="menu__list-link" href="#!">
-            Фото
-        </a>
-        </li>
-      </ul>
-    </nav>
+    
   </header>
 
   <section class="reason">
@@ -197,6 +156,53 @@
     </div>
   </section>
 
+  <section class="form">
+    <div class="container-form">
+      <form method="POST" class="appointment-form" id="appointment-form">
+          <h2>Заказать апартаменты</h2>
+          <div class="form-group-1">
+             <!-- <input type="text" name="title" id="title" placeholder="Title" required />-->
+              <input type="text" name="name" id="name" placeholder="Имя" required />
+              <input type="email" name="email" id="email" placeholder="Почта" required />
+              <input type="number" name="phone_number" id="phone_number" placeholder="Номер телефона" required />
+              <div class="select-list">
+                  <select name="course_type" id="course_type">
+                      <option slected value="">5 звезд</option>
+                      <option value="society">4 звезды</option>
+                      <option value="language">3 звезды</option>
+                  </select>
+              </div>
+          </div>
+          <div class="form-group-2">
+              <h3>Какой способ связи предпочитаете?</h3>
+              <div class="select-list">
+                  <select name="confirm_type" id="confirm_type">
+                      <option seleected value="">По телефону</option>
+                      <option value="by_email">По почте</option>
+                  </select>
+              </div>
+              <div class="select-list">
+                  <select name="hour_appointment" id="hour_appointment">
+                      <option seleected value="">8am-9am</option>
+                      <option value="9h-11h">9am-11am</option>
+                      <option value="11h-13h">11am-12pm</option>
+                      <option value="13h-15h">1pm-3pm</option>
+                      <option value="15h-17h">3pm-5pm</option>
+                      <option value="17h-20h">5pm-8pm</option>
+                  </select>
+              </div>
+          </div>
+          <div class="form-check">
+              <input type="checkbox" name="agree-term" id="agree-term" class="agree-term" />
+              <label for="agree-term" class="label-agree-term"><span><span></span></span>Я согласен с  <a href="#" class="term-service">Условиями соглашения</a></label>
+          </div>
+          <div class="form-submit">
+              <input type="submit" name="submit" id="submit" class="submit" value="Отправить заявку" />
+          </div>
+      </form>
+  </div>
+  </section>
+
 
   <footer class="footer">
     <div class="container">
@@ -205,55 +211,56 @@
         <div class="footer__item footer__item--company">
           <h5 class="footer__item-title">КОМПАНИЯ</h5>
           <ul class="footer__item-list">
-            <li><a class="footer__item-link" href="#!">О компании</a></li>
-            <li><a class="footer__item-link" href="#!"></a>Работай с нами</li>
-            <li><a class="footer__item-link" href="#!"></a>Пресса</li>
+            <span><a class="footer__item-link" href="#!">О компании</a></span>
+            <span><a class="footer__item-link" href="#!"></a>Работай с нами</span>
+            <span><a class="footer__item-link" href="#!"></a>Пресса</span>
           </ul>
         </div>
 
         <div class="footer__item">
           <h5 class="footer__item-title">ДЕТАЛИ</h5>
           <ul class="footer__item-list">
-            <li><a class="footer__item-link" href="#!">Бронирование</a></li>
-            <li><a class="footer__item-link" href="#!">Оплата</a></li>
-            <li><a class="footer__item-link" href="#!">Условия</a></li>
-            <li><a class="footer__item-link" href="#!">Политика</a></li>
-            <li><a class="footer__item-link" href="#!">Карта сайта</a></li>
+            <span><a class="footer__item-link" href="#!">Бронирование</a></span>
+            <span><a class="footer__item-link" href="#!">Оплата</a></span>
+            <span><a class="footer__item-link" href="#!">Условия</a></span>
+            <span><a class="footer__item-link" href="#!">Политика</a></span>
+            <span><a class="footer__item-link" href="#!">Карта сайта</a></span>
           </ul>
         </div>
 
         <div class="footer__item">
           <h5 class="footer__item-title">КОНТАКТЫ</h5>
           <ul class="footer__item-list">
-            <li><a class="footer__item-link footer__item-link--social footer__item-link--message" href="#!">Свяжись с нами</a></li>
-            <li><a class="footer__item-link footer__item-link--social footer__item-link--facebook" href="#!">Facebook</a></li>
-            <li><a class="footer__item-link footer__item-link--social footer__item-link--instagram" href="#!">Instagram</a></li>
-            <li><a class="footer__item-link footer__item-link--social footer__item-link--youtube" href="#!">YouTube</a></li>
-            <li><a class="footer__item-link footer__item-link--social footer__item-link--email" href="#!">Почта</a></li>
+            <span><a class="footer__item-link footer__item-link--social footer__item-link--message" href="#!">Свяжись с нами</a></span>
+            <span><a class="footer__item-link footer__item-link--social footer__item-link--facebook" href="#!">Facebook</a></span>
+            <span><a class="footer__item-link footer__item-link--social footer__item-link--instagram" href="#!">Instagram</a></span>
+            <span><a class="footer__item-link footer__item-link--social footer__item-link--youtube" href="#!">YouTube</a></span>
+            <span><a class="footer__item-link footer__item-link--social footer__item-link--email" href="#!">Почта</a></span>
           </ul>
         </div>
 
         <div class="footer__item footer__item--blog">
           <h5 class="footer__item-title">БЛОГ</h5>
           <ul class="footer__item-list">
-            <li><a class="footer__item-link" href="#!">Идеи для фотосессии</a></li>
-            <li><a class="footer__item-link" href="#!">Свадьба на Кубе</a></li>
-            <li><a class="footer__item-link" href="#!">ТОП 10 ресторанов Кубы</a></li>
-            <li><a class="footer__item-link" href="#!">Лучшие достопримечательности Гаванны</a></li>
-            <li><a class="footer__item-link" href="#!">Кубинская кухня</a></li>
+            <span><a class="footer__item-link" href="#!">Идеи для фотосессии</a></span>
+            <span><a class="footer__item-link" href="#!">Свадьба на Кубе</a></span>
+            <span><a class="footer__item-link" href="#!">ТОП 10 ресторанов Кубы</a></span>
+            <span><a class="footer__item-link" href="#!">Лучшие достопримечаности Гаванны</a></span>
+            <span><a class="footer__item-link" href="#!">Кубинская кухня</a></span>
           </ul>
         </div>
       </div>
 
       <div class="footer__copy">
-        © 2020 Все права защищены
+        © 2022 Все права защищены
       </div>
     </div>
   </footer>
 
-
+  <script src="vendor/jquery/jquery.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="js/slick.min.js"></script>
   <script src="js/main.js"></script>
+
 </body>
 </html>
